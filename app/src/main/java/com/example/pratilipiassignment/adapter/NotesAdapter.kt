@@ -39,8 +39,6 @@ class NotesAdapter() :
         holder.binding.tvDesc.text = arrList[position].noteText
         holder.binding.tvDateTime.text = arrList[position].dateTime
 
-        holder.binding.cardView.setCardBackgroundColor(Color.parseColor("#171C26"))
-
         if (arrList[position].imgPath != null){
             holder.binding.imgNote.setImageBitmap(BitmapFactory.decodeFile(arrList[position].imgPath))
             holder.binding.imgNote.visibility = View.VISIBLE
